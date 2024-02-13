@@ -15,12 +15,12 @@ namespace WebCookies
                 if (loginCookie != null)
                 {
                     // Recupera i valori dai cookie e impostali come testo della label
-                    Label1.Text = "Benvenuto " + loginCookie["nome"] + " " + loginCookie["cognome"];
+                    Label1.Text = "Benvenuto " + loginCookie["Username"] + " " + loginCookie["Password"];
                 }
                 else
                 {
                     // Se il cookie non esiste, reindirizza al login
-                    Response.Redirect("Login.aspx");
+                    Response.Redirect("Default.aspx");
                 }
             }
         }

@@ -24,7 +24,7 @@ textarea {
 .dropdown-menu.show {
     display: block;
     top: 120%;
-    left: 90%;
+    left: -81%;
     width: 250px;
     padding: 10px;
     background-color: #212529;
@@ -37,4 +37,10 @@ textarea {
 
 .dropdown-item:hover {
     color: black;
+}
+
+.logout:hover {
+    background-color: darkgrey;
+    color: black;
+    border: 1px solid white;
 }

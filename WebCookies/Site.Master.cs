@@ -12,7 +12,7 @@ namespace WebCookies
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Assicurati che txtUsername e txtPassword siano collegati ai controlli HTML corretti.
+
         }
 
         protected void BtnLogin_Click(object sender, EventArgs e)
@@ -20,8 +20,8 @@ namespace WebCookies
             HttpCookie userData = new HttpCookie("login");
             if (txtUsername != null && txtPassword != null)
             {
-                userData["nome"] = txtUsername.Value;
-                userData["cognome"] = txtPassword.Value;
+                userData["Username"] = txtUsername.Value;
+                userData["Password"] = txtPassword.Value;
             }
             userData.Expires = DateTime.Now.AddDays(7); // Imposta la scadenza del cookie
 

@@ -54,18 +54,18 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Informazioni</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contatto</a></li>
                         <!-- Dropdown Menu per il login -->
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown ms-auto">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLogin" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownLogin">
                                 <div class="px-4 py-3">
                                     <div class="mb-3">
                                         <label for="txtUsername" class="form-label">Username</label>
-                                        <input id="txtUsername" runat="server" class="form-control" type="text" />
+                                        <input id="txtUsername" runat="server" class="form-control" type="text" placeholder="Username" />
                                     </div>
                                     <div class="mb-3">
                                         <label for="txtPassword" class="form-label">Password</label>
-                                        <input id="txtPassword" runat="server" class="form-control" type="text" />
+                                        <input id="txtPassword" runat="server" class="form-control" type="password" placeholder="Password" />
                                     </div>
                                     <button type="button" class="btn btn-primary" runat="server" onserverclick="BtnLogin_Click">Accedi</button>
                                 </div>
